@@ -14,12 +14,12 @@ if ( ! defined( 'WPINC' ) ) {
 	die();
 }
 
-include __DIR__ . '/includes/cpts.php';
+include __DIR__ . '/includes/custom_post_type/class-custom-post-type.php';
 
 /**
  * This is an example of how to create a post type using the CPT factory
  */
 
 $news = new Custom_Post_Type( 'News' );
-// $news->add_taxonomy('News Type');
+$news->add_taxonomy( 'News Type' );
 // $meetings = new Custom_Post_Type('Meetings');
